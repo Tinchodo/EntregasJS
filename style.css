@@ -1,0 +1,218 @@
+body {
+  margin: 0px;
+  transition: 0.3s ease all;
+}
+body.dark {
+  background: #1b1b1b;
+}
+body.block {
+  display: none;
+}
+
+/* navbar */
+.nav-container {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  height: 14vh;
+  background-color: #1b1b1b !important;
+}
+
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  color: #fff;
+  margin-top: 4vh;
+  cursor: pointer;
+}
+
+.ver-carrito {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 3.5vh;
+  cursor: pointer;
+}
+
+/* banner styles */
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1617122387493-34c22fc88560?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+.banner-container {
+  text-align: center;
+  padding: 15% 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* product cards */
+.shop-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 90px;
+  margin-right: 80px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card img {
+  width: 90%;
+  height: 250px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* modal content */
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0909;
+  color: #fff;
+  width: 100%;
+}
+
+.modal-header-title {
+  justify-self: start;
+}
+
+.modal-header-button {
+  cursor: pointer;
+}
+
+.modal-container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+
+.modal-container div img {
+  height: 120px;
+  width: 120px;
+}
+
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* button day-night */
+.btn-day {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.switch {
+  background: #343D58;
+  border-radius: 1000px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  position: relative;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: orange;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
