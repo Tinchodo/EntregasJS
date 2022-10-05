@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "curso": "Curso Flair",
+        "cupos": 10,
+        "precio": 2500
+    },
+    {
+        "id": 2,
+        "curso": "Curso Cócteles",
+        "cupos": 15,
+        "precio": 4000
+    },
+    {
+        "id": 3,
+        "curso": "Curso Barista",
+        "cupos": 10,
+        "precio": 2000
+    }
+]
